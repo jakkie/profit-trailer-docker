@@ -1,0 +1,13 @@
+
+version: '3'
+
+services:
+  profittrailer:
+    build: .
+    container_name: profittrailer
+    volumes:
+      - ./application.properties:/app/ProfitTrailer/application.properties
+      - ./initialization:/app/ProfitTrailer/initialization
+    restart: always
+    ports:
+      - "8081:8081"
