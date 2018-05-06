@@ -7,7 +7,7 @@ RUN apt-get install -y npm
 RUN apt-get clean
 RUN npm install pm2@latest -g
 
-ARG PT_VERSION=2.0.1
+ARG PT_VERSION=2.0.2
 ENV PT_VERSION ${PT_VERSION}
 
 RUN mkdir -p /app
