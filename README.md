@@ -2,7 +2,7 @@
 
 Profit Trailer Docker
 
-Compatible with Profit Trailer bot version : v2.0.3
+Compatible with Profit Trailer bot version : v2.0.4
 `https://wiki.profittrailer.com/doku.php?id=start`
 
 ## Install Docker
@@ -39,10 +39,10 @@ http://localhost:8081
 docker build -t profit-trailer .
 ```
 
-- To build with a specific Profit Trailer version from version v2.0.3 and later. Just change the Profit Trailer version to the version you want. To see which versions are available go to `https://github.com/taniman/profit-trailer/releases`
+- To build with a specific Profit Trailer version from version v2.0.4 and later. Just change the Profit Trailer version to the version you want. To see which versions are available go to `https://github.com/taniman/profit-trailer/releases`
 
 ```bash
-docker build -t profit-trailer --build-arg PT_VERSION=2.0.3 .
+docker build -t profit-trailer --build-arg PT_VERSION=2.0.4 .
 ```
 
 ### Running Profit Trailer with docker-compose
