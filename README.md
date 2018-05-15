@@ -2,6 +2,12 @@
 
 Profit Trailer Docker
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
+[![](https://images.microbadger.com/badges/image/jakkie/profit-trailer-docker.svg)](https://microbadger.com/images/jakkie/profit-trailer-docker "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/jakkie/profit-trailer-docker.svg)](https://microbadger.com/images/jakkie/profit-trailer-docker "Get your own version badge on microbadger.com")
+[![Docker Automated build](https://img.shields.io/docker/automated/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
+[![Docker Build Status](https://img.shields.io/docker/build/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
+
 Compatible with Profit Trailer bot version : v2.0.5
 `https://wiki.profittrailer.com/doku.php?id=start`
 

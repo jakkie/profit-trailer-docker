@@ -1,8 +1,10 @@
-FROM openjdk:8
-FROM node:latest
+
+FROM ubuntu:latest
 
 RUN apt-get update
-RUN apt-get install -y unzip
+RUN apt-get install -y unzip wget default-jdk nodejs
+RUN ln -s /usr/bin/nodejs /usr/bin/node
+RUN apt-get install -y npm
 RUN apt-get clean
 RUN npm install pm2@latest -g
 
