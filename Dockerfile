@@ -5,7 +5,7 @@ RUN apt-get install -y unzip wget default-jdk
 RUN apt-get clean
 RUN npm install pm2@latest -g
 
-ARG PT_VERSION=2.0.4
+ARG PT_VERSION=2.0.5
 ENV PT_VERSION ${PT_VERSION}
 
 RUN mkdir -p /app
