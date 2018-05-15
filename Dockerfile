@@ -1,7 +1,8 @@
+FROM openjdk:8
 FROM node:latest
 
 RUN apt-get update
-RUN apt-get install -y unzip wget default-jdk
+RUN apt-get install -y unzip
 RUN apt-get clean
 RUN npm install pm2@latest -g
 
