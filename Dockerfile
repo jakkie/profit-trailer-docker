@@ -1,22 +1,18 @@
 
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
-RUN apt-get update
-RUN apt-get install -y unzip wget default-jdk nodejs
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-RUN apt-get install -y npm
-RUN apt-get clean
+RUN apt-get update && apt-get install -y unzip curl default-jdk
+RUN curl -sL https://deb.nodesource.com/setup_9.x -o nodesource_setup.sh && bash nodesource_setup.sh
+RUN apt-get install -y nodejs && apt-get clean
 RUN npm install pm2@latest -g
 
-ARG PT_VERSION=2.0.5
+ARG PT_VERSION=2.0.7
 ENV PT_VERSION ${PT_VERSION}
 
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /app/
 
-RUN wget https://github.com/taniman/profit-trailer/releases/download/$PT_VERSION/ProfitTrailer-$PT_VERSION.zip
-RUN unzip ProfitTrailer-$PT_VERSION.zip 
-RUN mv /app/ProfitTrailer-$PT_VERSION /app/ProfitTrailer
+RUN curl https://github.com/taniman/profit-trailer/releases/download/$PT_VERSION/ProfitTrailer-$PT_VERSION.zip -L -o /app/profittrailer.zip
+RUN unzip /app/profittrailer.zip -d /app/ && mv /app/ProfitTrailer-$PT_VERSION /app/ProfitTrailer
 
 WORKDIR /app/ProfitTrailer
 RUN chmod +x ProfitTrailer.jar
