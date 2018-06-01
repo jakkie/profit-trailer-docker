@@ -7,7 +7,7 @@ Profit Trailer Docker
 [![](https://images.microbadger.com/badges/version/jakkie/profit-trailer-docker.svg)](https://microbadger.com/images/jakkie/profit-trailer-docker "Get your own version badge on microbadger.com")
 [![Docker Build Status](https://img.shields.io/docker/build/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
 
-Compatible with Profit Trailer bot version : v2.0.9
+Compatible with Profit Trailer bot version : v2.0.10
 `https://wiki.profittrailer.com/doku.php?id=start`
 
 ## Install Docker
