@@ -47,7 +47,7 @@ docker build -t profit-trailer .
 - To build with a specific Profit Trailer version from version v2.0.9 and later. Just change the Profit Trailer version to the version you want. To see which versions are available go to `https://github.com/taniman/profit-trailer/releases`
 
 ```bash
-docker build -t profit-trailer --build-arg PT_VERSION=2.0.10 .
+docker build -t profit-trailer --build-arg PT_VERSION=2.0.11 .
 ```
 
 ### Running Profit Trailer with docker-compose
@@ -86,7 +86,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-Tip jar, support appreciated!
+Donations are also very welcomed and appreciated:
 
 BTC: 1JvpPGe22ViBYNiNrA3nwtg71Jta5vqXAi
 
