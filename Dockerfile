@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y unzip curl default-jdk
-RUN curl -sL https://deb.nodesource.com/setup_9.x -o nodesource_setup.sh && bash nodesource_setup.sh
+RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && bash nodesource_setup.sh
 RUN apt-get install -y nodejs && apt-get clean
 RUN npm install pm2@latest -g
 
