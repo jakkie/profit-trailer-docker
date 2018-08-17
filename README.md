@@ -7,7 +7,7 @@ Profit Trailer Docker
 [![](https://images.microbadger.com/badges/version/jakkie/profit-trailer-docker.svg)](https://microbadger.com/images/jakkie/profit-trailer-docker "Get your own version badge on microbadger.com")
 [![Docker Build Status](https://img.shields.io/docker/build/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
 
-Compatible with Profit Trailer bot version : v2.1.5
+Compatible with Profit Trailer bot version : v2.1.0 - v2.1.5
 `https://wiki.profittrailer.com/doku.php?id=start`
 
 ## Install Docker
@@ -20,12 +20,11 @@ Compatible with Profit Trailer bot version : v2.1.5
 
 ### Run latest Profit Trailer version
 
-- download the configure files from `https://github.com/jakkie/profit-trailer-docker/blob/master/configs`
-- Edit all configs especially application.properties with your license key and exchange apis, other wise the bot will not start. See for `https://wiki.profittrailer.com/doku.php?id=start` reference.
-- To Run Container and replace `<your path>` with the full path where the config files are.
+- Download and edit application.properties with your license key and exchange apis, other wise the bot will not start. See for `https://wiki.profittrailer.com/doku.php?id=start` reference.
+- To Run Container and replace `<your path>` with the full path where the application.properties file and data folder are.
 
 ```bash
-docker run -v <your path>/application.properties:/app/ProfitTrailer/application.properties -v <your path>/initialization:/app/ProfitTrailer/initialization -p 8081:8081 --name pt jakkie/profit-trailer-docker
+docker run -v <your path>/application.properties:/app/ProfitTrailer/application.properties -v <your path>/data:/app/ProfitTrailer/data -p 8081:8081 --name pt jakkie/profit-trailer-docker
 ```
 
 - After Profit Trailer is running browse to the url example `http://your-ip:8081`
