@@ -6,7 +6,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh && bas
 RUN apt-get install -y nodejs && apt-get clean
 RUN npm install pm2@latest -g
 
-ARG PT_VERSION=2.1.17
+ARG PT_VERSION=2.1.19
 ENV PT_VERSION ${PT_VERSION}
 
 RUN mkdir -p /app/
