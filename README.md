@@ -7,7 +7,7 @@ Profit Trailer Docker
 [![](https://images.microbadger.com/badges/version/jakkie/profit-trailer-docker.svg)](https://microbadger.com/images/jakkie/profit-trailer-docker "Get your own version badge on microbadger.com")
 [![Docker Build Status](https://img.shields.io/docker/build/jakkie/profit-trailer-docker.svg)](https://hub.docker.com/r/jakkie/profit-trailer-docker/)
 
-Compatible with Profit Trailer bot version : v2.1.0 - v2.1.23
+Compatible with Profit Trailer bot version : v2.1.0 - v2.1.26
 `https://wiki.profittrailer.com/doku.php?id=start`
 
 ## Install Docker
@@ -43,10 +43,10 @@ http://localhost:8081
 docker build -t profit-trailer .
 ```
 
-- To build with a specific Profit Trailer version from version v2.1.23 and later. Just change the Profit Trailer version to the version you want. To see which versions are available go to `https://github.com/taniman/profit-trailer/releases`
+- To build with a specific Profit Trailer version from version v2.1.26 and later. Just change the Profit Trailer version to the version you want. To see which versions are available go to `https://github.com/taniman/profit-trailer/releases`
 
 ```bash
-docker build -t profit-trailer --build-arg PT_VERSION=2.1.23.
+docker build -t profit-trailer --build-arg PT_VERSION=2.1.26.
 ```
 
 ### Running Profit Trailer with docker-compose
